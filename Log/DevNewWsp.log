@@ -1,0 +1,15 @@
+﻿24 Oct 2024 21:01:46 - Saving file AdminDataTemplates.xml (E:\autosar\project\Demo1\Config\Developer\AdminDataTemplates.xml)
+24 Oct 2024 21:01:46 - Saving file Door.dcf (E:\autosar\project\Demo1\Config\Developer\Door.dcf)
+24 Oct 2024 21:01:47 - Start import
+24 Oct 2024 21:01:47 - Importing file (D:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\StandardPackages_AR4.arxml).
+24 Oct 2024 21:01:47 - Importing file (D:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\ServicePortInterfaces_4.3.1.arxml).
+24 Oct 2024 21:01:47 - Importing file (D:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\ApplicationPortInterfaces_4.3.1.arxml).
+24 Oct 2024 21:01:47 - Importing file (E:\autosar\project\Demo1\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+24 Oct 2024 21:01:47 - Merging imported data
+24 Oct 2024 21:01:49 - Finished import
+24 Oct 2024 21:01:49 - Saving file ProfileSettings.xml (E:\autosar\project\Demo1\Config\Developer\ProfileSettings.xml)
+24 Oct 2024 21:01:49 - Saving file Packages.arxml (E:\autosar\project\Demo1\Config\Developer\Packages.arxml)
+24 Oct 2024 21:01:49 - Saving file DataTypes.arxml (E:\autosar\project\Demo1\Config\Developer\DataTypes.arxml)
+24 Oct 2024 21:01:49 - Saving file PortInterfaces.arxml (E:\autosar\project\Demo1\Config\Developer\PortInterfaces.arxml)
+24 Oct 2024 21:01:49 - Saving file Door.arxml (E:\autosar\project\Demo1\Config\Developer\ECUProjects\Door.arxml)
+24 Oct 2024 21:01:49 - Saving file Door.dcf (E:\autosar\project\Demo1\Config\Developer\Door.dcf)
