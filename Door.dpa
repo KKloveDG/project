@@ -167,5 +167,9 @@
         <AmdGenerateDebugData>false</AmdGenerateDebugData>
         <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
     </Miscellaneous>
-    <SwctGeneration/>
+    <SwctGeneration>
+        <Component Name="CpApMySwc" GenerationEnabled="true"/>
+        <Component Name="CpSaDoorFrontRight" GenerationEnabled="true"/>
+        <Component Name="CpSalnteriorLight" GenerationEnabled="true"/>
+    </SwctGeneration>
 </ProjectAssistant>
