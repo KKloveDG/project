@@ -15,6 +15,7 @@
 	</FILEREF>
 	<FILEREF>
 		<ARXML>ECUProjects/Door.arxml</ARXML>
+		<DVG>ECUProjects/Door.dvg</DVG>
 	</FILEREF>
 	<FILEREF>
 		<ARXML>ComponentTypes/CtCoApplication.arxml</ARXML>

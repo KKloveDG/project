@@ -171,5 +171,8 @@
         <Component Name="CpApMySwc" GenerationEnabled="true"/>
         <Component Name="CpSaDoorFrontRight" GenerationEnabled="true"/>
         <Component Name="CpSalnteriorLight" GenerationEnabled="true"/>
+        <Component Name="CtApMySwc" GenerationEnabled="true"/>
+        <Component Name="CtSaDoor" GenerationEnabled="true"/>
+        <Component Name="CtSalnteriorLight" GenerationEnabled="true"/>
     </SwctGeneration>
 </ProjectAssistant>
