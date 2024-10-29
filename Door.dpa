@@ -37,8 +37,11 @@
     </Folders>
     <Tools>
         <DEV>D:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\DaVinciDEV.exe</DEV>
+        <LegacyConverter Version="1.8.24"/>
+        <DDM Version="5.18.37 SP1"/>
     </Tools>
     <Input>
+        <ECUEX>Config\System\SystemExtract.arxml</ECUEX>
         <Options>
             <IgnoreUuidsSystemDescriptionFiles>false</IgnoreUuidsSystemDescriptionFiles>
             <IgnoreUuidsStandardConfigurationFiles>false</IgnoreUuidsStandardConfigurationFiles>
@@ -48,9 +51,20 @@
     </Input>
     <References>
         <DVWorkspace>.\Config\Developer\Door.dcf</DVWorkspace>
+        <FlatMap>.\Config\System\FlatMap.arxml</FlatMap>
+        <FlatECUEX>.\Config\System\FlatExtract.arxml</FlatECUEX>
+        <OEMCommunicationExtract>Config\System\Communication.arxml</OEMCommunicationExtract>
+        <EcucFileReferences/>
     </References>
+    <Display LastVersion="5.18.37 SP1">
+        <FileSet Id="" CS="a1c42526">
+            <File Order="0" EcuInstance="Veh_Door" Hash="98b32bd8811ef1fc2464b2dd5b678304" FileCategory="legacy_communication_data">E:\autosar\DemoForDBC\Demo.dbc</File>
+        </FileSet>
+        <Merge/>
+    </Display>
     <ECUC>
-        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">.\Config\ECUC\Door.ecuc.arxml</Active>
+        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">Config\ECUC\Door.ecuc.arxml</Active>
+        <Derived RootPackageName="/InitialEcuC/InitialEcuC">Config\ECUC\Door.ecuc.Initial.arxml</Derived>
     </ECUC>
     <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE"/>
     <DEVSettings>
@@ -157,6 +171,9 @@
                 <Settings Name="|MICROSAR|vDem42">
                     <Setting Value="1.2.0" Name="BswImplSwVersion"/>
                 </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.persistency.internal.folder">
+                <Settings Name="TargetFolderManager"/>
             </Settings>
         </Misc>
     </ToolSettings>

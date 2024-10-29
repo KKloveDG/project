@@ -1,0 +1,29 @@
+﻿29 Oct 2024 21:10:15 - Opening workspace 'C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.dcf'...
+29 Oct 2024 21:10:17 - Loading file PlatformTypes_AR4.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
+29 Oct 2024 21:10:17 - Loading file BswM_swc.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\ServiceComponents\BswM_swc.arxml)
+29 Oct 2024 21:10:17 - Loading file ComM_swc.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\ServiceComponents\ComM_swc.arxml)
+29 Oct 2024 21:10:17 - Loading file Det_swc.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\ServiceComponents\Det_swc.arxml)
+29 Oct 2024 21:10:17 - Loading file EcuM_swc.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\ServiceComponents\EcuM_swc.arxml)
+29 Oct 2024 21:10:17 - Loading file Os_swc.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\ServiceComponents\Os_swc.arxml)
+29 Oct 2024 21:10:18 - Loading file Constants.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Constants.arxml)
+29 Oct 2024 21:10:18 - Loading file CtApMySwc.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\CtApMySwc.arxml)
+29 Oct 2024 21:10:18 - Loading file CtCoApplication.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\CtCoApplication.arxml)
+29 Oct 2024 21:10:18 - Loading file CtSaDoor.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\CtSaDoor.arxml)
+29 Oct 2024 21:10:18 - Loading file CtSalnteriorLight.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\CtSalnteriorLight.arxml)
+29 Oct 2024 21:10:18 - Loading file DataTypes.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\DataTypes.arxml)
+29 Oct 2024 21:10:18 - Loading file Door.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.arxml)
+29 Oct 2024 21:10:18 - Loading file Packages.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Packages.arxml)
+29 Oct 2024 21:10:18 - Loading file PortInterfaces.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\PortInterfaces.arxml)
+29 Oct 2024 21:10:19 - Opened workspace 'C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.dcf' successfully.
+29 Oct 2024 21:10:20 - Start import
+29 Oct 2024 21:10:20 - Importing file (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\System\SystemExtract.arxml).
+29 Oct 2024 21:10:21 - Merging imported data
+29 Oct 2024 21:10:22 - Finished import
+29 Oct 2024 21:10:22 - Saving workspace 'C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.dcf'...
+29 Oct 2024 21:10:22 - Saving file Door.dvg (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.dvg)
+29 Oct 2024 21:10:22 - Saving file DataTypes.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\DataTypes.arxml)
+29 Oct 2024 21:10:22 - Saving file Door.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.arxml)
+29 Oct 2024 21:10:22 - Saving file Packages.arxml (C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Packages.arxml)
+29 Oct 2024 21:10:22 - Saved workspace 'C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.dcf' successfully.
+29 Oct 2024 21:10:22 - Closing workspace 'C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.dcf'...
+29 Oct 2024 21:10:22 - Closed workspace 'C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-7226734\Workflow\1730207349709-0\Config\Developer\Door.dcf' successfully.
