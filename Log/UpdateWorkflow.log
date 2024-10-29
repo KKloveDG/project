@@ -1,0 +1,113 @@
+2024-10-29 - 20:55:57
+Workflow 'Update workflow.' started.
+              Using DaVinci Configurator  5.18.37 SP1 (x86_64).
+ 20:55:57 - Action 'Validate workflow environment' started.
+ 20:55:57 - Action 'Validate dpa file' started.
+ 20:55:57 - Action 'Validate dpa file' successfully finished.
+ 20:55:57 - Action 'SLP conformance check' started.
+ 20:55:57 - Action 'SLP conformance check' successfully finished.
+ 20:55:57 - Action 'Validate workflow environment' successfully finished.
+ 20:55:57 - Action 'Input File Pre-Processing' started.
+ 20:55:57 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+ 20:55:57 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+              Convert legacy file(s) to System Description.
+              Used executable: D:\autosar\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe.
+              Arguments: "E:\autosar\DemoForDBC\Demo.dbc" -o "C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-5183399\LegacyConverterResults\1730206557987-0\ConvertedLegacy" -r 42 -e -v 19.
+              
+              Vector Legacy Database Converter.
+              Version: 1.8.24.0.
+              Copyright (c) 2018 Vector Informatik GmbH.
+              License is restricted to the usage with CBD1800257 (D01) for MSR_Vector_SLP4.
+              
+              [info] SIP License found as D:\autosar\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\SipLicense.lic.
+              [info] Command line: D:\autosar\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "E:\autosar\DemoForDBC\Demo.dbc" -o "C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-5183399\LegacyConverterResults\1730206557987-0\ConvertedLegacy" -r 42 -e -v 19.
+              [info] Converting DBC file E:\autosar\DemoForDBC\Demo.dbc.
+              [warning] DBC attribute Manufacturer not defined.
+                    ==> Use Manufacturer='Vector' as attribute value.
+              [info] Writing System Description...
+              [info] Writing 2 ECU Extracts...
+              
+              C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-5183399\LegacyConverterResults\1730206557987-0\ConvertedLegacy.arxml.
+              C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-5183399\LegacyConverterResults\1730206557987-0\ConvertedLegacy_GW.arxml.
+              C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-5183399\LegacyConverterResults\1730206557987-0\ConvertedLegacy_Veh_Door.arxml.
+              Elapsed time: 0.874 seconds.
+              0 Errors.
+              1 Warnings.
+              [Warning] Legacy Converter finished with errors/warnings.
+ 20:55:59 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+ 20:55:59 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished with warnings.
+                 [Warning] Legacy Converter finished with errors/warnings.
+ 20:55:59 - Action 'Input File Pre-Processing' finished.
+ 20:55:59 - Action 'Create copy of the Project' started.
+              Copy project 'E:\autosar\project\Demo1' to 'C:\Users\Hunry\AppData\Local\Temp\DaVinci\Cfg-5183399\Workflow\1730206559499-0'...
+              Adjusting DPA file of copied project...
+ 20:55:59 - Action 'Create copy of the Project' successfully finished.
+ 20:55:59 - Action 'Close Project' started.
+ 20:56:00 - Action 'Close Project' successfully finished.
+ 20:56:03 - Action 'Prepare DaVinci Developer update data' started.
+ 20:56:03 - Action 'Prepare DaVinci Developer update data' successfully finished.
+ 20:56:03 - Action 'Prepare System Extract' started.
+ 20:56:04 - Action 'Preprocessing System Extract' started.
+ 20:56:04 - Action 'Preprocessing System Extract' successfully finished.
+ 20:56:04 - Action 'Create OEM Communication Extract' started.
+ 20:56:04 - Action 'Create OEM Communication Extract' successfully finished.
+ 20:56:04 - Action 'Prepare System Extract' successfully finished.
+ 20:56:04 - Action 'Updating the project' started.
+ 20:56:08 - Action 'Create ECU configuration' started.
+              [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                          Extract Path: /PDU/PpDoorStateFrontLeft_oCAN00
+                          Ecuc    Path: /Com/ComConfig/PpDoorStateFrontLeft_oCAN00_401cef01_Tx/ComTxIPdu.
+              [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                          Extract Path: /PDU/PpDoorStateFrontRight_oCAN00
+                          Ecuc    Path: /Com/ComConfig/PpDoorStateFrontRight_oCAN00_c9449d55_Tx/ComTxIPdu.
+              [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                          Extract Path: /PDU/PpLightStateFront_oCAN00
+                          Ecuc    Path: /Com/ComConfig/PpLightStateFront_oCAN00_7d4af1fd_Tx/ComTxIPdu.
+ 20:56:13 - Action 'Create ECU configuration' successfully finished with warnings.
+                 [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                     Extract Path: /PDU/PpDoorStateFrontLeft_oCAN00
+                     Ecuc    Path: /Com/ComConfig/PpDoorStateFrontLeft_oCAN00_401cef01_Tx/ComTxIPdu
+                 [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                     Extract Path: /PDU/PpDoorStateFrontRight_oCAN00
+                     Ecuc    Path: /Com/ComConfig/PpDoorStateFrontRight_oCAN00_c9449d55_Tx/ComTxIPdu
+                 [Warning] COM52013: No transmission mode declared for the ISignalIPdu.
+                     Extract Path: /PDU/PpLightStateFront_oCAN00
+                     Ecuc    Path: /Com/ComConfig/PpLightStateFront_oCAN00_7d4af1fd_Tx/ComTxIPdu.
+ 20:56:13 - Action 'Update ECU configuration' started.
+ 20:56:13 - Action 'Update ECU configuration' started.
+              No Package path available for module configuration: /ActiveEcuC/Com. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Mcu. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Rte. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/EcuM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Os. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/PduR. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/CanSM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Can. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/CanIf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/Det. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/ComM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/EcuC. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/BswM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: /ActiveEcuC/vSet. Default /ActiveEcuC is used instead.
+ 20:56:19 - Action 'Update ECU configuration' successfully finished.
+ 20:56:19 - Action 'Update ECU configuration' successfully finished.
+ 20:56:19 - Action 'Updating the project' finished.
+ 20:56:19 - Action 'Adapt project file' started.
+ 20:56:19 - Action 'Adapt project file' successfully finished.
+ 20:56:19 - Action 'Generate update report' started.
+ 20:56:27 - Action 'Generate update report' successfully finished.
+ 20:56:27 - Action 'Execute Solving Actions' started.
+              Executing all Preferred-Solving-Actions...
+              All Preferred-Solving-Actions done.
+              Executing update specific Preferred-Solving-Actions...
+              Update specific Preferred-Solving-Actions done.
+ 20:56:35 - Action 'Execute Solving Actions' successfully finished.
+ 20:56:35 - Action 'Update DaVinci Developer Workspace' started.
+              No additional logging information available.
+ 20:56:45 - Action 'Update DaVinci Developer Workspace' aborted due to errors.
+                 [FatalError] com.vector.cfg.workflow.common.exceptions.UpdateWorkflowException: DaVinci Developer returned with error code: 0xC050003B. Reason: Workspace <%s> is already open and can't be updated.
+                   
+                   Please close the workspace in prior to start the update process.
+20:56:47 - Workflow 'Update workflow.' aborted due to errors.
+                [FatalError] The Activity 'Update DaVinci Developer Workspace' was not successful, so 'Update workflow.' was aborted.

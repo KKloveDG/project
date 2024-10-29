@@ -34,6 +34,32 @@
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="62B41C0A-8C52-4852-AFC3-B5CE4AC85CA8">
               <SHORT-NAME>CtSalnteriorLight_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <DATA-RECEIVED-EVENT UUID="4710039F-1431-41BD-B548-F0730B4B0047">
+                  <SHORT-NAME>DRT_RCtSaInteriorLightSwitchLight_PpLightstate_DeLightstate</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtSalnteriorLight/CtSalnteriorLight_InternalBehavior/RCtSaInteriorLightSwitchLight</START-ON-EVENT-REF>
+                  <DATA-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtSalnteriorLight/PpLightstate</CONTEXT-R-PORT-REF>
+                    <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightstate/DeLightstate</TARGET-DATA-ELEMENT-REF>
+                  </DATA-IREF>
+                </DATA-RECEIVED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="93364590-6862-4C98-8033-BFCB8AEFC116">
+                  <SHORT-NAME>RCtSaInteriorLightSwitchLight</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="031F96FC-399F-4E83-AC2C-7C26BC07ECBC">
+                      <SHORT-NAME>REC_PpLightstate_DeLightstate</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtSalnteriorLight/PpLightstate</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightstate/DeLightstate</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>true</SUPPORTS-MULTIPLE-INSTANTIATION>
             </SWC-INTERNAL-BEHAVIOR>
           </INTERNAL-BEHAVIORS>

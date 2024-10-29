@@ -33,6 +33,29 @@
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="13F2F3CF-4F66-4E4C-B852-E6B9C1C3E1D7">
               <SHORT-NAME>CtSaDoor_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="82CD97E7-9929-4334-950D-162961680A28">
+                  <SHORT-NAME>TMT_RCtSaDoorReadDoor</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtSaDoor/CtSaDoor_InternalBehavior/RCtSaDoorReadDoor</START-ON-EVENT-REF>
+                  <PERIOD>0.2</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="B60899D6-B9BB-4C76-BA5B-6EDA264FB1EB">
+                  <SHORT-NAME>RCtSaDoorReadDoor</SHORT-NAME>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="4BB28A71-7C82-44BD-A931-59007B5948D8">
+                      <SHORT-NAME>SEND_PpDoorState_DeDoorState</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtSaDoor/PpDoorState</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>true</SUPPORTS-MULTIPLE-INSTANTIATION>
             </SWC-INTERNAL-BEHAVIOR>
           </INTERNAL-BEHAVIORS>
