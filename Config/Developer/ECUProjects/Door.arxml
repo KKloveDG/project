@@ -2,38 +2,6 @@
 <!--This file was saved with a tool from Vector Informatik GmbH-->
 <AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <AR-PACKAGES>
-    <AR-PACKAGE UUID="F285BD2C-5FB0-451E-AA33-3EC654C075D6">
-      <SHORT-NAME>ECUCompositionTypes</SHORT-NAME>
-      <ELEMENTS>
-        <COMPOSITION-SW-COMPONENT-TYPE UUID="D414F70B-9463-41ED-A187-F8E0FD3EDC7D">
-          <SHORT-NAME>ECU_Composition</SHORT-NAME>
-          <COMPONENTS>
-            <SW-COMPONENT-PROTOTYPE UUID="F08CE330-C83D-4F87-B440-24738E7D678A">
-              <SHORT-NAME>CpCoApplication</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ComponentTypes/CtCoApplication</TYPE-TREF>
-            </SW-COMPONENT-PROTOTYPE>
-          </COMPONENTS>
-        </COMPOSITION-SW-COMPONENT-TYPE>
-      </ELEMENTS>
-    </AR-PACKAGE>
-    <AR-PACKAGE UUID="DD2FD5CA-E5AA-4618-AF26-680217BFC03A">
-      <SHORT-NAME>EndToEndProtections</SHORT-NAME>
-      <ELEMENTS>
-        <END-TO-END-PROTECTION-SET UUID="55FA61F3-B14E-4DE6-9C95-03E109E9D021">
-          <SHORT-NAME>EndToEndProtectionSet</SHORT-NAME>
-        </END-TO-END-PROTECTION-SET>
-      </ELEMENTS>
-    </AR-PACKAGE>
-    <AR-PACKAGE UUID="3CEF0E72-3BB6-44E3-A1C3-D2FC9D5051F8">
-      <SHORT-NAME>Systems</SHORT-NAME>
-    </AR-PACKAGE>
     <AR-PACKAGE UUID="0C569AC9-919F-418A-8508-7B0B46DF1E6C">
       <SHORT-NAME>VehicleProject</SHORT-NAME>
       <ELEMENTS>
@@ -47,6 +15,137 @@
           </ROOT-SOFTWARE-COMPOSITIONS>
         </SYSTEM>
       </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="F285BD2C-5FB0-451E-AA33-3EC654C075D6">
+      <SHORT-NAME>ECUCompositionTypes</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="D414F70B-9463-41ED-A187-F8E0FD3EDC7D">
+          <SHORT-NAME>ECU_Composition</SHORT-NAME>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="C10DA73C-57E6-4098-A096-00F62CF381BA">
+              <SHORT-NAME>PpDoorStateRearLeft</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="AE4F6A5C-2B17-451D-95BC-D7C2B6AD0DAE">
+              <SHORT-NAME>PpDoorStateRearRight</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="21281C7F-6DB8-439C-BD52-C6B704D8FA85">
+              <SHORT-NAME>PpLightstateRear</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightstate/DeLightstate</DATA-ELEMENT-REF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiLightstate</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="F08CE330-C83D-4F87-B440-24738E7D678A">
+              <SHORT-NAME>CpCoApplication</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ComponentTypes/CtCoApplication</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR UUID="9B172928-5508-4898-9A78-9C16396DE895">
+              <SHORT-NAME>PpDoorStateRearLeft_CpCoApplication_PpDoorStateRearLeft</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/CpCoApplication</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCoApplication/PpDoorStateRearLeft</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/PpDoorStateRearLeft</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="47FB7923-77B2-429A-8B08-6F0C58ACD7F5">
+              <SHORT-NAME>PpDoorStateRearRight_CpCoApplication_PpDoorStateRearRight</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/CpCoApplication</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCoApplication/PpDoorStateRearRight</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/PpDoorStateRearRight</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="03095C14-0037-426E-AB7D-51CBE67DDC10">
+              <SHORT-NAME>CpCoApplication_PpLightstateRear_PpLightstateRear</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/CpCoApplication</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCoApplication/PpLightstateRear</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionTypes/ECU_Composition/PpLightstateRear</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="DD2FD5CA-E5AA-4618-AF26-680217BFC03A">
+      <SHORT-NAME>EndToEndProtections</SHORT-NAME>
+      <ELEMENTS>
+        <END-TO-END-PROTECTION-SET UUID="55FA61F3-B14E-4DE6-9C95-03E109E9D021">
+          <SHORT-NAME>EndToEndProtectionSet</SHORT-NAME>
+        </END-TO-END-PROTECTION-SET>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="3CEF0E72-3BB6-44E3-A1C3-D2FC9D5051F8">
+      <SHORT-NAME>Systems</SHORT-NAME>
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>

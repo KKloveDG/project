@@ -192,5 +192,6 @@
         <Component Name="CtApMySwc" GenerationEnabled="true"/>
         <Component Name="CtSaDoor" GenerationEnabled="true"/>
         <Component Name="CtSalnteriorLight" GenerationEnabled="true"/>
+        <Component Name="CtCddloHwAb" GenerationEnabled="true"/>
     </SwctGeneration>
 </ProjectAssistant>
