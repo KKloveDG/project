@@ -84,6 +84,7 @@
                     </Settings>
                 </Settings>
             </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratedModules"/>
         </Generators>
         <Misc>
             <Settings Name="com.vector.cfg.gen.core.bswmdmigration.internal.service.BswImplVersionPersistor">

@@ -36,4 +36,8 @@
 	<FILEREF>
 		<ARXML>Constants.arxml</ARXML>
 	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/CtCddloHwAb.arxml</ARXML>
+		<DVG>ComponentTypes/CtCddloHwAb.dvg</DVG>
+	</FILEREF>
 </DCF>
