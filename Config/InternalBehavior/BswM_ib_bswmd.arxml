@@ -12,6 +12,11 @@
               <ELEMENTS>
                 <BSW-MODULE-DESCRIPTION UUID="46df7185-4232-4d8d-9454-d1c4bf9efe7b">
                   <SHORT-NAME>BswM</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
                   <INTERNAL-BEHAVIORS>
                     <BSW-INTERNAL-BEHAVIOR UUID="3408185f-c482-4a49-9534-1e944ff47904">
                       <SHORT-NAME>BswMBehavior</SHORT-NAME>
@@ -20,9 +25,27 @@
                           <SHORT-NAME>BSWM_EXCLUSIVE_AREA_0</SHORT-NAME>
                         </EXCLUSIVE-AREA>
                       </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="fcc917b8-73ca-43fb-866b-f2471e3a8277">
+                          <SHORT-NAME>BswM_MainFunction</SHORT-NAME>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="8026a64c-5536-492d-94b4-f4c8b23d669c">
+                          <SHORT-NAME>BswM_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
                     </BSW-INTERNAL-BEHAVIOR>
                   </INTERNAL-BEHAVIORS>
                 </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="73259a85-f661-4169-ada8-cd14d1eccc02">
+                  <SHORT-NAME>BswM_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
               </ELEMENTS>
             </AR-PACKAGE>
           </AR-PACKAGES>

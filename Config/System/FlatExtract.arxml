@@ -86,6 +86,88 @@
                                   <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
                                 </ANNOTATION>
                               </ANNOTATIONS>
+                              <PORTS>
+                                <R-PORT-PROTOTYPE UUID="f1b9f473-1a46-4ef3-92f8-4cc713d4bc7b">
+                                  <SHORT-NAME>PpDoorStateRearLeft</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <REQUIRED-COM-SPECS>
+                                    <NONQUEUED-RECEIVER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                                      <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-RECEIVER-COM-SPEC>
+                                  </REQUIRED-COM-SPECS>
+                                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="8e749a76-74d0-467a-9563-deb18c615b0b">
+                                  <SHORT-NAME>PpDoorStateRearRight</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <REQUIRED-COM-SPECS>
+                                    <NONQUEUED-RECEIVER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                                      <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-RECEIVER-COM-SPEC>
+                                  </REQUIRED-COM-SPECS>
+                                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="ce3048dc-aecb-4032-8f3f-76fea8c6503e">
+                                  <SHORT-NAME>PpLightstateRear</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDED-COM-SPECS>
+                                    <NONQUEUED-SENDER-COM-SPEC>
+                                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightstate/DeLightstate</DATA-ELEMENT-REF>
+                                      <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                          <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                      </INIT-VALUE>
+                                    </NONQUEUED-SENDER-COM-SPEC>
+                                  </PROVIDED-COM-SPECS>
+                                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiLightstate</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                              </PORTS>
                               <COMPONENTS>
                                 <SW-COMPONENT-PROTOTYPE UUID="e215e9f9-4997-4ab5-a88a-1855ae03f72d">
                                   <SHORT-NAME>CpApMySwc</SHORT-NAME>
@@ -167,6 +249,22 @@
                                   <SHORT-NAME>EcuM</SHORT-NAME>
                                   <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/EcuM_swc/ComponentTypes/EcuM</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="582cf132-7e93-4f2c-a14f-8cdf2a3d2058">
+                                  <SHORT-NAME>CtCddloHwAb</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/CtCddloHwAb</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
                               <CONNECTORS>
                                 <ASSEMBLY-SW-CONNECTOR UUID="69022a6d-35a5-4cc7-ba98-5fe380ba68ff">
@@ -235,6 +333,146 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpDoorStateFrontRight</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="c191f71d-8a4e-4fa1-b381-c032b6d84ad0">
+                                  <SHORT-NAME>PpLightstateRearPpLightstateRear</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-COMPONENT-REF>
+                                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpLightstateRear</TARGET-P-PORT-REF>
+                                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpLightstateRear</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="28ad5116-4f49-4a7c-b693-6a2083c460a3">
+                                  <SHORT-NAME>PpDoorStateRearLeftPpDoorStateRearLeft</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-COMPONENT-REF>
+                                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpDoorStateRearLeft</TARGET-R-PORT-REF>
+                                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpDoorStateRearLeft</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="37332667-32b5-414b-8506-3da18bcfb4a8">
+                                  <SHORT-NAME>PpDoorStateRearRightPpDoorStateRearRight</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <INNER-PORT-IREF>
+                                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-COMPONENT-REF>
+                                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpDoorStateRearRight</TARGET-R-PORT-REF>
+                                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  </INNER-PORT-IREF>
+                                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/PpDoorStateRearRight</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="e13858e7-0952-4652-9c54-5c49f0abfe59">
+                                  <SHORT-NAME>PpInteriorLightFrontPpInteriorLightloHwAb</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CtCddloHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddloHwAb/PpInteriorLightFront</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpSalnteriorLight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtSalnteriorLight/PpInteriorLightloHwAb</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="f5a4f74f-27af-4a36-95cf-74c6f553ab24">
+                                  <SHORT-NAME>PpDoorFrontLeftPpDoorloHwAb</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CtCddloHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddloHwAb/PpDoorFrontLeft</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpSaDoorFrontLeft</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtSaDoor/PpDoorloHwAb</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="7824f125-db4c-48f5-9d3f-7f86d5160576">
+                                  <SHORT-NAME>PpDoorFrontRightPpDoorloHwAb</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                    <ANNOTATION>
+                                      <LABEL>
+                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
+                                      </LABEL>
+                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CtCddloHwAb</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCddloHwAb/PpDoorFrontRight</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpSaDoorFrontRight</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtSaDoor/PpDoorloHwAb</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="8fbef44d-455c-4e21-aec5-e61f26ebd793">
+                                  <SHORT-NAME>ComM_UR_CN_CAN00_aa6f78c5_CpApMySwc_PpComMUserRequest</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/ComM_swc/ComponentTypes/ComM/UR_CN_CAN00_aa6f78c5</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpComMUserRequest</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="ebfb7aaf-8107-4d7c-ba8c-1d1aa6dd5c6f">
@@ -263,10 +501,12 @@
                                     <SD GID="42d8b7e9-9821-4efd-aebf-eee70691f92a">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
                                     <SD GID="31a54bcc-3ea9-45e6-a421-d8e54f8e15f8">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="bf9129f8-f3e4-44c4-be5e-131b17aa6f88">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
+                                    <SD GID="8fbef44d-455c-4e21-aec5-e61f26ebd793">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM_UR_CN_CAN00_aa6f78c5_CpApMySwc_PpComMUserRequest</SD>
                                     <SD GID="e215e9f9-4997-4ab5-a88a-1855ae03f72d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</SD>
                                     <SD GID="8fe07868-7b55-40e6-b289-956f8dccb9eb">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpSaDoorFrontLeft</SD>
                                     <SD GID="5a9ba256-ccb1-4a53-93e0-797f07d8ba0d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpSaDoorFrontRight</SD>
                                     <SD GID="e998172f-b52b-467f-97e6-aa5bfca82775">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpSalnteriorLight</SD>
+                                    <SD GID="582cf132-7e93-4f2c-a14f-8cdf2a3d2058">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CtCddloHwAb</SD>
                                     <SD GID="ea193aeb-574d-43e9-9a4b-12ff43b43eb1">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="f4f3319a-4fec-488e-bde5-f2111d0a7dad">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
                                     <SD GID="192fb67d-938f-4e6d-9742-c9223f73223f">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
@@ -276,26 +516,43 @@
                                     <SD GID="72616525-AE4C-42A1-AD70-7E54AA4CA8CD">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior</SD>
                                     <SD GID="317B54C7-4C35-4E65-8518-E9725A05BD51">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/DRT_RCtApMySwcCode_PpDoorStateFrontLeft_DeDoorState</SD>
                                     <SD GID="1C079BCF-AF27-448A-A870-231A3CF89AE6">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/DRT_RCtApMySwcCode_PpDoorStateFrontRight_DeDoorState</SD>
+                                    <SD GID="4E079A64-F313-4255-B96A-C409881C5B7A">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/DRT_RCtApMySwcCode_PpDoorStateRearLeft_DeDoorState</SD>
+                                    <SD GID="31C51EFA-4CBA-40C4-862D-9B5FE29CE323">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/DRT_RCtApMySwcCode_PpDoorStateRearRight_DeDoorState</SD>
                                     <SD GID="704B67BE-0593-4C51-81B8-B2CB4BB844A2">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/RCtApMySwcCode</SD>
+                                    <SD GID="6A63D713-402D-4CAA-8B3B-4FCC8F75E9F2">/ComponentTypes/CtApMySwc/PpComMUserRequest</SD>
                                     <SD GID="AD8D63FF-A096-4576-A514-0EDC56890E26">/ComponentTypes/CtApMySwc/PpDoorStateFrontLeft</SD>
                                     <SD GID="8F3527BF-A764-47EC-94B7-F19ED3320E58">/ComponentTypes/CtApMySwc/PpDoorStateFrontRight</SD>
+                                    <SD GID="AAA22159-6158-4D4E-890E-4FBF9B6B7CC5">/ComponentTypes/CtApMySwc/PpDoorStateRearLeft</SD>
+                                    <SD GID="3B29E75F-0F6C-4423-B88A-AB04EAD700EE">/ComponentTypes/CtApMySwc/PpDoorStateRearRight</SD>
                                     <SD GID="6B836441-53EB-4DC6-888F-1C7AB297A1FC">/ComponentTypes/CtApMySwc/PpLightStateFront</SD>
+                                    <SD GID="DFFB7B07-8A73-4702-876A-089ED5B7C0C3">/ComponentTypes/CtApMySwc/PpLightstateRear</SD>
                                     <SD GID="91B3DF0B-0AEA-4E27-940F-19BB1BC2E5C9">/ComponentTypes/CtApMySwc_Implementation</SD>
+                                    <SD GID="29005992-A9DC-4317-A64C-DCCFFF35F90B">/ComponentTypes/CtCddloHwAb</SD>
+                                    <SD GID="F579ACA2-8B49-4C77-B6DB-3E7A587509C4">/ComponentTypes/CtCddloHwAb/CtCddloHwAb_InternalBehavior/OIT_RCtCddloHwAb_PpDoorFrontLeft_ReadChannelPpDoorFrontLeft_ReadChannel_PpDoorFrontLeft_ReadChannel</SD>
+                                    <SD GID="3199BA41-129D-4E4C-8862-4628057D9FCC">/ComponentTypes/CtCddloHwAb/CtCddloHwAb_InternalBehavior/OIT_RCtCddloHwAb_PpDoorFrontRight_ReadChannelPpDoorFrontRight_ReadChannel_PpDoorFrontRight_ReadChannel</SD>
+                                    <SD GID="DE2039C5-5C20-46F3-87E4-DB52384A6A10">/ComponentTypes/CtCddloHwAb/CtCddloHwAb_InternalBehavior/OIT_RCtCddloHwAb_PpInteriorLightFront_WriteChannelPpInteriorLightFront_WriteChannel_PpInteriorLightFront_WriteChannel</SD>
+                                    <SD GID="02587BB6-A3D1-44A0-92A2-F2030CC65891">/ComponentTypes/CtCddloHwAb/PpDoorFrontLeft</SD>
+                                    <SD GID="90F77136-CB69-40A8-98CA-CAB69554190D">/ComponentTypes/CtCddloHwAb/PpDoorFrontRight</SD>
+                                    <SD GID="957FB6EF-6E11-4790-A466-5968B91F1359">/ComponentTypes/CtCddloHwAb/PpInteriorLightFront</SD>
+                                    <SD GID="A4F38219-1487-4B9E-B572-6D8786379264">/ComponentTypes/CtCddloHwAb_Implementation</SD>
                                     <SD GID="E2BB3704-D5FE-48C1-8E25-6A82F0966E97">/ComponentTypes/CtCoApplication</SD>
                                     <SD GID="0B67FE6C-0E02-4860-BE0A-6B8835C26C50">/ComponentTypes/CtCoApplication/CpApMySwc</SD>
                                     <SD GID="29440116-F9CD-4442-B7AD-51C94842893F">/ComponentTypes/CtCoApplication/CpSaDoorFrontLeft</SD>
                                     <SD GID="5ECAD30B-A62F-41C0-B4B4-B67FCBFDD14C">/ComponentTypes/CtCoApplication/CpSaDoorFrontRight</SD>
                                     <SD GID="356B0373-5E47-46FE-8CDF-B75C6041298B">/ComponentTypes/CtCoApplication/CpSalnteriorLight</SD>
+                                    <SD GID="4C7956B9-677C-4459-A8BC-0CAEFD3CD2C1">/ComponentTypes/CtCoApplication/CtCddloHwAb</SD>
                                     <SD GID="F1620C3D-9592-4076-B1BE-41EC1CE18C3A">/ComponentTypes/CtSaDoor</SD>
                                     <SD GID="13F2F3CF-4F66-4E4C-B852-E6B9C1C3E1D7">/ComponentTypes/CtSaDoor/CtSaDoor_InternalBehavior</SD>
                                     <SD GID="B60899D6-B9BB-4C76-BA5B-6EDA264FB1EB">/ComponentTypes/CtSaDoor/CtSaDoor_InternalBehavior/RCtSaDoorReadDoor</SD>
                                     <SD GID="82CD97E7-9929-4334-950D-162961680A28">/ComponentTypes/CtSaDoor/CtSaDoor_InternalBehavior/TMT_RCtSaDoorReadDoor</SD>
                                     <SD GID="B1FE4DBB-335A-4BE6-8E4C-2AF69CFC6697">/ComponentTypes/CtSaDoor/PpDoorState</SD>
+                                    <SD GID="623BF906-92FE-4E7D-BA22-B883FAC17CBE">/ComponentTypes/CtSaDoor/PpDoorloHwAb</SD>
                                     <SD GID="206420DF-FB47-4ECD-AD2B-E92685DD0219">/ComponentTypes/CtSaDoor_Implementation</SD>
                                     <SD GID="34FA3AAE-9BE9-4070-9914-6524343D7546">/ComponentTypes/CtSalnteriorLight</SD>
                                     <SD GID="62B41C0A-8C52-4852-AFC3-B5CE4AC85CA8">/ComponentTypes/CtSalnteriorLight/CtSalnteriorLight_InternalBehavior</SD>
                                     <SD GID="4710039F-1431-41BD-B548-F0730B4B0047">/ComponentTypes/CtSalnteriorLight/CtSalnteriorLight_InternalBehavior/DRT_RCtSaInteriorLightSwitchLight_PpLightstate_DeLightstate</SD>
                                     <SD GID="93364590-6862-4C98-8033-BFCB8AEFC116">/ComponentTypes/CtSalnteriorLight/CtSalnteriorLight_InternalBehavior/RCtSaInteriorLightSwitchLight</SD>
+                                    <SD GID="77B87172-ED40-4BD8-AF95-FECF1F2026A7">/ComponentTypes/CtSalnteriorLight/PpInteriorLightloHwAb</SD>
                                     <SD GID="83563CE3-6E53-4A5B-A96D-6FB9443A4464">/ComponentTypes/CtSalnteriorLight/PpLightstate</SD>
                                     <SD GID="6BB1E5A5-8434-4433-8F30-983005D6B1C6">/ComponentTypes/CtSalnteriorLight_Implementation</SD>
                                     <SD GID="12EACD1B-2593-45CB-89B2-66600841F908">/ComponentTypes/DataTypeMappingSets/DemoTypeMapping</SD>
@@ -311,8 +568,14 @@
                                     <SD GID="6830A672-D9DA-4123-B7A9-FE4F6405715B">/DataTypes/IdtLightstate1</SD>
                                     <SD GID="D414F70B-9463-41ED-A187-F8E0FD3EDC7D">/ECUCompositionTypes/ECU_Composition</SD>
                                     <SD GID="F08CE330-C83D-4F87-B440-24738E7D678A">/ECUCompositionTypes/ECU_Composition/CpCoApplication</SD>
+                                    <SD GID="C10DA73C-57E6-4098-A096-00F62CF381BA">/ECUCompositionTypes/ECU_Composition/PpDoorStateRearLeft</SD>
+                                    <SD GID="AE4F6A5C-2B17-451D-95BC-D7C2B6AD0DAE">/ECUCompositionTypes/ECU_Composition/PpDoorStateRearRight</SD>
+                                    <SD GID="21281C7F-6DB8-439C-BD52-C6B704D8FA85">/ECUCompositionTypes/ECU_Composition/PpLightstateRear</SD>
                                     <SD GID="3408185f-c482-4a49-9534-1e944ff47904">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
                                     <SD GID="99e35df7-d64d-4e51-a705-43b28fd9e158">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="fcc917b8-73ca-43fb-866b-f2471e3a8277">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
+                                    <SD GID="8026a64c-5536-492d-94b4-f4c8b23d669c">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="73259a85-f661-4169-ada8-cd14d1eccc02">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</SD>
                                     <SD GID="13ce8adf-c941-49d6-8619-83079f69189e">/MICROSAR/BswM_swc/BswMMappingSet</SD>
                                     <SD GID="8840bfe1-05b8-4f58-b65b-3c0e78478244">/MICROSAR/BswM_swc/ComponentTypes/BswM</SD>
                                     <SD GID="bfda8cd0-efa3-4571-a236-2bde917af63d">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</SD>
