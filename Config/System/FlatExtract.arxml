@@ -473,6 +473,17 @@
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpComMUserRequest</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="e4ce7d06-fcdb-49a7-a255-987729cfdeb5">
+                                  <SHORT-NAME>BswM_Switch_ESH_ModeSwitch_BswM_Notification_ESH_ModeNotification</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
                             </COMPOSITION-SW-COMPONENT-TYPE>
                             <END-TO-END-PROTECTION-SET UUID="ebfb7aaf-8107-4d7c-ba8c-1d1aa6dd5c6f">
@@ -500,6 +511,7 @@
                                   <SDG GID="DV:CfgReferences">
                                     <SD GID="42d8b7e9-9821-4efd-aebf-eee70691f92a">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
                                     <SD GID="31a54bcc-3ea9-45e6-a421-d8e54f8e15f8">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
+                                    <SD GID="e4ce7d06-fcdb-49a7-a255-987729cfdeb5">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM_Switch_ESH_ModeSwitch_BswM_Notification_ESH_ModeNotification</SD>
                                     <SD GID="bf9129f8-f3e4-44c4-be5e-131b17aa6f88">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
                                     <SD GID="8fbef44d-455c-4e21-aec5-e61f26ebd793">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM_UR_CN_CAN00_aa6f78c5_CpApMySwc_PpComMUserRequest</SD>
                                     <SD GID="e215e9f9-4997-4ab5-a88a-1855ae03f72d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</SD>
@@ -520,6 +532,7 @@
                                     <SD GID="31C51EFA-4CBA-40C4-862D-9B5FE29CE323">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/DRT_RCtApMySwcCode_PpDoorStateRearRight_DeDoorState</SD>
                                     <SD GID="704B67BE-0593-4C51-81B8-B2CB4BB844A2">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/RCtApMySwcCode</SD>
                                     <SD GID="6A63D713-402D-4CAA-8B3B-4FCC8F75E9F2">/ComponentTypes/CtApMySwc/PpComMUserRequest</SD>
+                                    <SD GID="75712278-0496-437C-BF25-F58DDF91D968">/ComponentTypes/CtApMySwc/PpComMUserRequest1</SD>
                                     <SD GID="AD8D63FF-A096-4576-A514-0EDC56890E26">/ComponentTypes/CtApMySwc/PpDoorStateFrontLeft</SD>
                                     <SD GID="8F3527BF-A764-47EC-94B7-F19ED3320E58">/ComponentTypes/CtApMySwc/PpDoorStateFrontRight</SD>
                                     <SD GID="AAA22159-6158-4D4E-890E-4FBF9B6B7CC5">/ComponentTypes/CtApMySwc/PpDoorStateRearLeft</SD>
@@ -576,11 +589,46 @@
                                     <SD GID="fcc917b8-73ca-43fb-866b-f2471e3a8277">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
                                     <SD GID="8026a64c-5536-492d-94b4-f4c8b23d669c">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunctionTimingEvent0</SD>
                                     <SD GID="73259a85-f661-4169-ada8-cd14d1eccc02">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM_MainFunction</SD>
-                                    <SD GID="13ce8adf-c941-49d6-8619-83079f69189e">/MICROSAR/BswM_swc/BswMMappingSet</SD>
+                                    <SD GID="aa751372-80b7-4789-a65f-ff6c871cd029">/MICROSAR/BswM_swc/BswMMappingSet</SD>
                                     <SD GID="8840bfe1-05b8-4f58-b65b-3c0e78478244">/MICROSAR/BswM_swc/ComponentTypes/BswM</SD>
                                     <SD GID="bfda8cd0-efa3-4571-a236-2bde917af63d">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</SD>
                                     <SD GID="575632fc-9995-44ad-b86d-3be5c63d8d02">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</SD>
+                                    <SD GID="d0e2417e-5ed2-4e6d-a860-21831ee2bd0f">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction/DataReceivePointBswM_MainFunction_Request_ESH_PostRunRequest_0_requestedMode</SD>
+                                    <SD GID="845507bf-a04d-4bbb-a6a8-7f27f9169004">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction/DataReceivePointBswM_MainFunction_Request_ESH_PostRunRequest_1_requestedMode</SD>
+                                    <SD GID="dd1dd432-6cd8-4a61-b8cf-38ac11a0aac5">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction/DataReceivePointBswM_MainFunction_Request_ESH_RunRequest_0_requestedMode</SD>
+                                    <SD GID="ceb0099a-a1d1-47a9-a790-c519f64f6f42">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction/DataReceivePointBswM_MainFunction_Request_ESH_RunRequest_1_requestedMode</SD>
+                                    <SD GID="afe6a821-1b22-4211-afcd-31a7b9a53148">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction/ModeSwitchPointBswM_MainFunction_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode</SD>
                                     <SD GID="d5bd2a78-ce50-442e-a91f-327167aa385c">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/Timer_BswM_MainFunction</SD>
+                                    <SD GID="b87298a8-540e-42ff-9a7e-5fc7360a2fc9">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</SD>
+                                    <SD GID="51d1554a-6bd5-47af-a288-76237242dbd0">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_PostRunRequest_0</SD>
+                                    <SD GID="94aa1590-440a-4291-ace5-d18a73fbf238">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_PostRunRequest_1</SD>
+                                    <SD GID="a34dd11f-529b-420d-adc1-bcbfb53fc35a">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_0</SD>
+                                    <SD GID="519d2676-e1e3-4936-953b-37d8029411a3">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_1</SD>
+                                    <SD GID="b907c46c-2cac-4f08-965b-8b164e63b0b6">/MICROSAR/BswM_swc/ComponentTypes/BswM/Switch_ESH_ModeSwitch</SD>
+                                    <SD GID="da8377ca-c560-4b7e-b12e-cc2352e3ac09">/MICROSAR/BswM_swc/DataTypes</SD>
+                                    <SD GID="bb16f376-f209-49a1-b7e5-9935e3a1e420">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_Mode</SD>
+                                    <SD GID="8aca06fc-c0cf-4fb3-b917-10ef3d85deb2">/MICROSAR/BswM_swc/DataTypes/BswM_ESH_RunRequest</SD>
+                                    <SD GID="d7271702-d808-48f4-8a1e-45bfa3719a25">/MICROSAR/BswM_swc/DataTypes/CompuMethods</SD>
+                                    <SD GID="a4f9482d-6eb6-43b5-b1a7-398b9eab639c">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_Mode</SD>
+                                    <SD GID="41264477-9261-4662-8628-5a7862d49ca5">/MICROSAR/BswM_swc/DataTypes/CompuMethods/BswM_ESH_RunRequest</SD>
+                                    <SD GID="eabfa196-c943-4779-8c10-2cad723000d6">/MICROSAR/BswM_swc/DataTypes/DataConstrs</SD>
+                                    <SD GID="092490e5-1730-4843-81f2-73ff5de5f1f9">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_Mode_Constr</SD>
+                                    <SD GID="3d98c8c1-6ee6-4815-9f24-df172cb738e4">/MICROSAR/BswM_swc/DataTypes/DataConstrs/BswM_ESH_RunRequest_Constr</SD>
+                                    <SD GID="01c57b7d-9099-402e-894c-07c41a29db52">/MICROSAR/BswM_swc/ESH_Mode</SD>
+                                    <SD GID="9b0989cf-8eb6-431d-bb9f-b38c711e0c19">/MICROSAR/BswM_swc/ESH_Mode/POSTRUN</SD>
+                                    <SD GID="ae1107e9-106e-4a0c-85a8-d244cc6484b8">/MICROSAR/BswM_swc/ESH_Mode/RUN</SD>
+                                    <SD GID="a00bbf5f-e17a-4039-874a-a3de4c03bc64">/MICROSAR/BswM_swc/ESH_Mode/SHUTDOWN</SD>
+                                    <SD GID="24626ff9-f60d-4b02-aa11-e153ba0d70c0">/MICROSAR/BswM_swc/ESH_Mode/STARTUP</SD>
+                                    <SD GID="39281992-26b2-42ec-9345-e755346773b7">/MICROSAR/BswM_swc/ESH_Mode/WAKEUP</SD>
+                                    <SD GID="0a0ecc09-ed01-4493-85ba-c33dadaa4b02">/MICROSAR/BswM_swc/ESH_RunRequest</SD>
+                                    <SD GID="9ff37700-75de-4fd1-a45d-5c5355f96d53">/MICROSAR/BswM_swc/ESH_RunRequest/RELEASED</SD>
+                                    <SD GID="a3c69874-9ad4-4cbb-b1f9-f6b0eddd3d19">/MICROSAR/BswM_swc/ESH_RunRequest/REQUESTED</SD>
+                                    <SD GID="b90c20a7-3c0e-468f-940b-3d9ae24d7d55">/MICROSAR/BswM_swc/Interfaces</SD>
+                                    <SD GID="af3d67b9-c4ad-42fd-be9b-ecf667e1fa09">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode</SD>
+                                    <SD GID="67be5aa9-dc81-475e-beb2-64c34fe4c311">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode/BswM_MDGP_ESH_Mode</SD>
+                                    <SD GID="074579e5-c338-43bc-bf2e-6ed227c45b3a">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_RunRequest/BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="54750ea0-bd11-4952-a413-d6705aaff9a5">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest</SD>
+                                    <SD GID="ca3a1f42-84dc-4a74-97cf-6b4af69ba388">/MICROSAR/BswM_swc/Interfaces/BswM_SRI_BswM_MSI_ESH_RunRequest_BswM_MDGP_ESH_RunRequest/requestedMode</SD>
                                     <SD GID="a24fed11-9d30-49cd-9b2c-6883ccf8e93c">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior</SD>
                                     <SD GID="c6cd9b90-cfd5-4d39-ade7-e81ec179a1a6">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="fb93fc76-5b5d-4ab7-9354-01cedebb0c84">/MICROSAR/CanIf_ib_bswmd/BswModuleDescriptions/CanIf/CanIf_Behavior/CANIF_EXCLUSIVE_AREA_1</SD>
