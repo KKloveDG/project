@@ -164,6 +164,94 @@
                                     <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CtCddloHwAb</TARGET-REF>
                                   </ECU-EXTRACT-REFERENCE-IREF>
                                 </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="2f7645d5-8cd9-4f33-b79e-411f01feb6b1">
+                                  <SHORT-NAME>CpApMySwcPpNvMLightOnOffCtApMySwcNvM_PS_CpApMySwcSnNvMPimLightOnOffCounter</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:NvBlockNeeds</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SWC-SERVICE-DEPENDENCY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/SnNvMPimLightOnOffCounter</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                  <ECU-EXTRACT-REFERENCE-IREF>
+                                    <TARGET-REF DEST="ASSEMBLY-SW-CONNECTOR">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwcPpNvMLightOnOffCtApMySwcNvM_PS_CpApMySwcSnNvMPimLightOnOffCounter</TARGET-REF>
+                                  </ECU-EXTRACT-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="eb7bd31c-05ee-4fd5-9c4c-68abcbaf7caf">
+                                  <SHORT-NAME>CpApMySwcSnNvMPimLightOnOffCounter</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:NvBlockNeeds">
+                                        <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/NvM/CpApMySwcSnNvMPimLightOnOffCounter</SDX-REF>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:NvBlockNeeds</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SWC-SERVICE-DEPENDENCY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/SnNvMPimLightOnOffCounter</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="84f006a7-15fe-42cd-9a85-9c2548ce1074">
+                                  <SHORT-NAME>CpApMySwcPpNvMNotifyJobFinishedOdometerCtApMySwcNvM_NvM_RpNotifyJobEnd_CpApMySwcSnNvMPimOdometer</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:NvBlockNeeds</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SWC-SERVICE-DEPENDENCY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/SnNvMPimOdometer</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                  <ECU-EXTRACT-REFERENCE-IREF>
+                                    <TARGET-REF DEST="ASSEMBLY-SW-CONNECTOR">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwcPpNvMNotifyJobFinishedOdometerCtApMySwcNvM_NvM_RpNotifyJobEnd_CpApMySwcSnNvMPimOdometer</TARGET-REF>
+                                  </ECU-EXTRACT-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="f32d7331-0bf0-4b05-99c4-ae9ba4958387">
+                                  <SHORT-NAME>CpApMySwcPpNvMOdometerCtApMyswcNvM_PS_CpApMySwcSnNvMPimOdometer</SHORT-NAME>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:NvBlockNeeds</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SWC-SERVICE-DEPENDENCY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/SnNvMPimOdometer</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                  <ECU-EXTRACT-REFERENCE-IREF>
+                                    <TARGET-REF DEST="ASSEMBLY-SW-CONNECTOR">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwcPpNvMOdometerCtApMyswcNvM_PS_CpApMySwcSnNvMPimOdometer</TARGET-REF>
+                                  </ECU-EXTRACT-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
+                                <FLAT-INSTANCE-DESCRIPTOR UUID="a0485772-5c0d-449e-b3c5-fe4f2f8bd3f9">
+                                  <SHORT-NAME>CpApMySwcSnNvMPimOdometer</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:NvBlockNeeds">
+                                        <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/NvM/CpApMySwcSnNvMPimOdometer</SDX-REF>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:NvBlockNeeds</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <UPSTREAM-REFERENCE-IREF>
+                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</CONTEXT-ELEMENT-REF>
+                                    <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpApMySwc</CONTEXT-ELEMENT-REF>
+                                    <TARGET-REF DEST="SWC-SERVICE-DEPENDENCY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/SnNvMPimOdometer</TARGET-REF>
+                                  </UPSTREAM-REFERENCE-IREF>
+                                </FLAT-INSTANCE-DESCRIPTOR>
                               </INSTANCES>
                             </FLAT-MAP>
                           </ELEMENTS>

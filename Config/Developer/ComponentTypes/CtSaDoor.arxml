@@ -49,6 +49,9 @@
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="13F2F3CF-4F66-4E4C-B852-E6B9C1C3E1D7">
               <SHORT-NAME>CtSaDoor_InternalBehavior</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/DemoTypeMapping</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
               <EVENTS>
                 <TIMING-EVENT UUID="82CD97E7-9929-4334-950D-162961680A28">
                   <SHORT-NAME>TMT_RCtSaDoorReadDoor</SHORT-NAME>

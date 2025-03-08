@@ -207,6 +207,116 @@
               </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="31480F25-55C9-4AB5-B1F1-F3D1B8D422B1">
+              <SHORT-NAME>NvMService_AC3_SnNvMPimLightOnOffCounter</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3/WriteBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3/ReadBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3/InvalidateNvBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3/GetErrorStatus</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3/EraseBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Predefined_DEV/PortInterfaces/NvMService_AC3</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="C2A28B3F-C4BD-405B-801B-28BDA38843CE">
+              <SHORT-NAME>PpNvMLightOnOffCtApMySwc</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/WriteBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/SetRamBlockStatus</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/ReadBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/InvalidateNvBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/GetErrorStatus</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/EraseBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="297E8799-4F8F-4275-9E2D-0E7F9F3A6793">
+              <SHORT-NAME>PpNvMOdometerCtApMyswc</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/WriteBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/SetRamBlockStatus</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/RestoreBlockDefaults</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/ReadBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/InvalidateNvBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/GetErrorStatus</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/EraseBlock</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="B175B6C5-69D0-461C-902D-09167AB8AD85">
+              <SHORT-NAME>PpNvMNotifyJobFinishedOdometerCtApMySwc</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMNotifyJobFinished/JobFinished</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Predefined_DEV/PortInterfaces/NvMNotifyJobFinished</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
           </PORTS>
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="72616525-AE4C-42A1-AD70-7E54AA4CA8CD">
@@ -214,6 +324,38 @@
               <DATA-TYPE-MAPPING-REFS>
                 <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/DemoTypeMapping</DATA-TYPE-MAPPING-REF>
               </DATA-TYPE-MAPPING-REFS>
+              <EXCLUSIVE-AREAS>
+                <EXCLUSIVE-AREA UUID="5E00C26A-A29F-4878-994A-B2A5FE1A113C">
+                  <SHORT-NAME>ExArLightOnOffCounter</SHORT-NAME>
+                </EXCLUSIVE-AREA>
+                <EXCLUSIVE-AREA UUID="A50DF2CA-C1D5-4B92-9193-2F10179974D4">
+                  <SHORT-NAME>ExArOdometer</SHORT-NAME>
+                </EXCLUSIVE-AREA>
+              </EXCLUSIVE-AREAS>
+              <AR-TYPED-PER-INSTANCE-MEMORYS>
+                <VARIABLE-DATA-PROTOTYPE UUID="58E527A0-3441-4A22-BB5B-82024CE50A8C">
+                  <SHORT-NAME>PimOdometer</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/AdtOdomter</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+                <VARIABLE-DATA-PROTOTYPE UUID="9389DB0E-B46E-4E15-90EF-015C617D8EFC">
+                  <SHORT-NAME>PimLightOnOffCounter</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/AdtLightstate</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </AR-TYPED-PER-INSTANCE-MEMORYS>
               <EVENTS>
                 <DATA-RECEIVED-EVENT UUID="317B54C7-4C35-4E65-8518-E9725A05BD51">
                   <SHORT-NAME>DRT_RCtApMySwcCode_PpDoorStateFrontLeft_DeDoorState</SHORT-NAME>
@@ -247,10 +389,33 @@
                     <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-ELEMENT-REF>
                   </DATA-IREF>
                 </DATA-RECEIVED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="E41BD131-8AB3-4763-8C86-CA4F6EBA91A8">
+                  <SHORT-NAME>OIT_PpNvMNotifyJobFinishedOdometerCtApMySwc_JobFinished_PpNvMNotifyJobFinishedOdometerCtApMySwc_JobFinished</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/PpNvMNotifyJobFinishedOdometerCtApMySwc_JobFinished</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpNvMNotifyJobFinishedOdometerCtApMySwc</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMNotifyJobFinished/JobFinished</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
               </EVENTS>
+              <EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                <VARIABLE-DATA-PROTOTYPE UUID="15DAF997-0976-406F-8B16-B33A8A0164CD">
+                  <SHORT-NAME>IrvDoorStateOld</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/AdtDoorState</TYPE-TREF>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CDoorClosed</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </VARIABLE-DATA-PROTOTYPE>
+              </EXPLICIT-INTER-RUNNABLE-VARIABLES>
               <RUNNABLES>
                 <RUNNABLE-ENTITY UUID="704B67BE-0593-4C51-81B8-B2CB4BB844A2">
                   <SHORT-NAME>RCtApMySwcCode</SHORT-NAME>
+                  <CAN-ENTER-EXCLUSIVE-AREA-REFS>
+                    <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/ExArLightOnOffCounter</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                    <CAN-ENTER-EXCLUSIVE-AREA-REF DEST="EXCLUSIVE-AREA">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/ExArOdometer</CAN-ENTER-EXCLUSIVE-AREA-REF>
+                  </CAN-ENTER-EXCLUSIVE-AREA-REFS>
                   <DATA-READ-ACCESSS>
                     <VARIABLE-ACCESS UUID="B3B12449-7431-4376-9435-ADE9ECAF2BBB">
                       <SHORT-NAME>READ_PpDoorStateRearLeft_DeDoorState</SHORT-NAME>
@@ -311,6 +476,14 @@
                       </ACCESSED-VARIABLE>
                     </VARIABLE-ACCESS>
                   </DATA-SEND-POINTS>
+                  <READ-LOCAL-VARIABLES>
+                    <VARIABLE-ACCESS UUID="F9EBA70B-8F05-412A-BFA3-44A67771C234">
+                      <SHORT-NAME>Read_IrvDoorStateOld</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/IrvDoorStateOld</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </READ-LOCAL-VARIABLES>
                   <SERVER-CALL-POINTS>
                     <SYNCHRONOUS-SERVER-CALL-POINT UUID="01432E60-5DC1-4291-B92B-2E88E710EFE7">
                       <SHORT-NAME>SC_PpComMUserRequest_RequestComMode</SHORT-NAME>
@@ -326,9 +499,139 @@
                         <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
                       </OPERATION-IREF>
                     </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="C6657EE7-0D29-42EB-A777-3FC787E72134">
+                      <SHORT-NAME>SC_PpNvMLightOnOffCtApMySwc_WriteBlock</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpNvMLightOnOffCtApMySwc</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS/WriteBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="DCBD71BF-36AE-42C6-AB22-CECEC97FAEAD">
+                      <SHORT-NAME>SC_PpNvMOdometerCtApMyswc_WriteBlock</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpNvMOdometerCtApMyswc</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/WriteBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="EC2E8468-47B9-4CDB-BA2E-98E85614B294">
+                      <SHORT-NAME>SC_PpNvMOdometerCtApMyswc_GetErrorStatus</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpNvMOdometerCtApMyswc</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Predefined_DEV/PortInterfaces/NvMService_AC3_SRBS_Defs/GetErrorStatus</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
                   </SERVER-CALL-POINTS>
+                  <WRITTEN-LOCAL-VARIABLES>
+                    <VARIABLE-ACCESS UUID="9AAA849B-2351-4BD4-A7AA-D1DBE3C42488">
+                      <SHORT-NAME>WRITE_IrvDoorStateOld</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/IrvDoorStateOld</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </WRITTEN-LOCAL-VARIABLES>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="03B946E3-6D3C-4CCE-8743-15BA4F0C882B">
+                  <SHORT-NAME>PpNvMNotifyJobFinishedOdometerCtApMySwc_JobFinished</SHORT-NAME>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
+              <SERVICE-DEPENDENCYS>
+                <SWC-SERVICE-DEPENDENCY UUID="6458B250-A59E-48B1-A2A0-377776B7CFED">
+                  <SHORT-NAME>SnNvMPimOdometer</SHORT-NAME>
+                  <ASSIGNED-DATAS>
+                    <ROLE-BASED-DATA-ASSIGNMENT>
+                      <ROLE>ramBlock</ROLE>
+                      <USED-DATA-ELEMENT>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/PimOdometer</LOCAL-VARIABLE-REF>
+                      </USED-DATA-ELEMENT>
+                    </ROLE-BASED-DATA-ASSIGNMENT>
+                    <ROLE-BASED-DATA-ASSIGNMENT>
+                      <ROLE>defaultValue</ROLE>
+                      <USED-PARAMETER-ELEMENT>
+                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CalOdometer</LOCAL-PARAMETER-REF>
+                      </USED-PARAMETER-ELEMENT>
+                    </ROLE-BASED-DATA-ASSIGNMENT>
+                  </ASSIGNED-DATAS>
+                  <ASSIGNED-PORTS>
+                    <ROLE-BASED-PORT-ASSIGNMENT>
+                      <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpNvMOdometerCtApMyswc</PORT-PROTOTYPE-REF>
+                      <ROLE>NvMService_AC3_SRBS_Defs</ROLE>
+                    </ROLE-BASED-PORT-ASSIGNMENT>
+                    <ROLE-BASED-PORT-ASSIGNMENT>
+                      <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpNvMNotifyJobFinishedOdometerCtApMySwc</PORT-PROTOTYPE-REF>
+                      <ROLE>NvMNotifyJobFinished</ROLE>
+                    </ROLE-BASED-PORT-ASSIGNMENT>
+                  </ASSIGNED-PORTS>
+                  <SERVICE-NEEDS>
+                    <NV-BLOCK-NEEDS UUID="776671C3-E392-4B0C-B1D4-609BF96A027F">
+                      <SHORT-NAME>SnNvMPimOdometer</SHORT-NAME>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="DV_SDG">
+                            <SD GID="AutoServiceNeedNameHdlg">1</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <READONLY>false</READONLY>
+                      <RESISTANT-TO-CHANGED-SW>false</RESISTANT-TO-CHANGED-SW>
+                      <RESTORE-AT-START>true</RESTORE-AT-START>
+                      <STORE-AT-SHUTDOWN>true</STORE-AT-SHUTDOWN>
+                      <WRITE-ONLY-ONCE>false</WRITE-ONLY-ONCE>
+                    </NV-BLOCK-NEEDS>
+                  </SERVICE-NEEDS>
+                </SWC-SERVICE-DEPENDENCY>
+                <SWC-SERVICE-DEPENDENCY UUID="D88060FE-24D4-4E7D-9F42-BFD8713D354A">
+                  <SHORT-NAME>SnNvMPimLightOnOffCounter</SHORT-NAME>
+                  <ASSIGNED-DATAS>
+                    <ROLE-BASED-DATA-ASSIGNMENT>
+                      <ROLE>ramBlock</ROLE>
+                      <USED-DATA-ELEMENT>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/PimLightOnOffCounter</LOCAL-VARIABLE-REF>
+                      </USED-DATA-ELEMENT>
+                    </ROLE-BASED-DATA-ASSIGNMENT>
+                  </ASSIGNED-DATAS>
+                  <ASSIGNED-PORTS>
+                    <ROLE-BASED-PORT-ASSIGNMENT>
+                      <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpNvMLightOnOffCtApMySwc</PORT-PROTOTYPE-REF>
+                      <ROLE>NvMService_AC3_SRBS</ROLE>
+                    </ROLE-BASED-PORT-ASSIGNMENT>
+                  </ASSIGNED-PORTS>
+                  <SERVICE-NEEDS>
+                    <NV-BLOCK-NEEDS UUID="9357AB1F-1396-4209-A05A-180DB0AC7641">
+                      <SHORT-NAME>SnNvMPimLightOnOffCounter</SHORT-NAME>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="DV_SDG">
+                            <SD GID="AutoServiceNeedNameHdlg">1</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <READONLY>false</READONLY>
+                      <RESISTANT-TO-CHANGED-SW>false</RESISTANT-TO-CHANGED-SW>
+                      <RESTORE-AT-START>true</RESTORE-AT-START>
+                      <STORE-AT-SHUTDOWN>true</STORE-AT-SHUTDOWN>
+                      <WRITE-ONLY-ONCE>false</WRITE-ONLY-ONCE>
+                    </NV-BLOCK-NEEDS>
+                  </SERVICE-NEEDS>
+                </SWC-SERVICE-DEPENDENCY>
+              </SERVICE-DEPENDENCYS>
+              <SHARED-PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="3F5A0F1E-5FD6-4129-B5AB-3A826B5709B6">
+                  <SHORT-NAME>CalOdometer</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/AdtOdomter</TYPE-TREF>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/COdometerDefault</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </PARAMETER-DATA-PROTOTYPE>
+              </SHARED-PARAMETERS>
               <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
             </SWC-INTERNAL-BEHAVIOR>
           </INTERNAL-BEHAVIORS>

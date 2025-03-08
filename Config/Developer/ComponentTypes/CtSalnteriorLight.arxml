@@ -50,6 +50,9 @@
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="62B41C0A-8C52-4852-AFC3-B5CE4AC85CA8">
               <SHORT-NAME>CtSalnteriorLight_InternalBehavior</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/DemoTypeMapping</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
               <EVENTS>
                 <DATA-RECEIVED-EVENT UUID="4710039F-1431-41BD-B548-F0730B4B0047">
                   <SHORT-NAME>DRT_RCtSaInteriorLightSwitchLight_PpLightstate_DeLightstate</SHORT-NAME>
